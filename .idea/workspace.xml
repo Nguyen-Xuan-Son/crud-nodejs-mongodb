@@ -47,7 +47,7 @@
         <entry file="file://$PROJECT_DIR$/schemas/user.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="161">
-              <caret line="7" column="6" lean-forward="true" selection-start-line="7" selection-start-column="6" selection-end-line="7" selection-end-column="6" />
+              <caret line="7" column="6" selection-start-line="7" selection-start-column="6" selection-end-line="7" selection-end-column="6" />
             </state>
           </provider>
         </entry>
@@ -56,8 +56,8 @@
         <entry file="file://$PROJECT_DIR$/README.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
-              <first_editor relative-caret-position="598">
-                <caret line="176" column="2" lean-forward="true" selection-start-line="176" selection-start-column="2" selection-end-line="176" selection-end-column="2" />
+              <first_editor relative-caret-position="558">
+                <caret line="190" column="8" selection-start-line="190" selection-start-column="8" selection-end-line="190" selection-end-column="8" />
               </first_editor>
               <second_editor />
             </state>
@@ -88,10 +88,9 @@
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="276" />
-    <option name="y" value="79" />
-    <option name="width" value="1223" />
-    <option name="height" value="889" />
+    <option name="x" value="1258" />
+    <option name="width" value="669" />
+    <option name="height" value="1047" />
   </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
@@ -175,15 +174,17 @@
       <workItem from="1554851899257" duration="739000" />
       <workItem from="1554855111403" duration="821000" />
       <workItem from="1554902572330" duration="6939000" />
-      <workItem from="1554990438669" duration="12114000" />
+      <workItem from="1554990438669" duration="12216000" />
+      <workItem from="1555081448089" duration="3906000" />
+      <workItem from="1555134168997" duration="1094000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="27952000" />
+    <option name="totallyTimeSpent" value="33054000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="276" y="79" width="1223" height="889" extended-state="0" />
+    <frame x="1258" y="0" width="669" height="1047" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" weight="0.025316456" />
@@ -254,15 +255,15 @@
     <entry file="file://$PROJECT_DIR$/schemas/user.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="161">
-          <caret line="7" column="6" lean-forward="true" selection-start-line="7" selection-start-column="6" selection-end-line="7" selection-end-column="6" />
+          <caret line="7" column="6" selection-start-line="7" selection-start-column="6" selection-end-line="7" selection-end-column="6" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/README.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
-          <first_editor relative-caret-position="598">
-            <caret line="176" column="2" lean-forward="true" selection-start-line="176" selection-start-column="2" selection-end-line="176" selection-end-column="2" />
+          <first_editor relative-caret-position="558">
+            <caret line="190" column="8" selection-start-line="190" selection-start-column="8" selection-end-line="190" selection-end-column="8" />
           </first_editor>
           <second_editor />
         </state>

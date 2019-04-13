@@ -174,7 +174,24 @@
 + `db.user.find({}).sort({age: 1})` => Trong hàm sort có field nó có giá trị là 1 hoặc là -1 và tùy vào đó mà nó sẽ có thể là sắp xếp theo chiều tằng dần và giảm đân, ta cũng có thể kết hợp hai điều kiện lại với nhau để sort nhưng nó sẽ ưu tiên sort theo điều kiện đầu tiên.
 
 ###5.Index
-+ 
++ Index sẽ dùng trong trường hợp truy vấn với nhiều bản ghi, để tránh thời gian truy vấn lâu. Ta sẽ đánh index cho nó để nó có thể truy vấn nhanh hơn
++ `db.user.find({"age": 23}).explain("executionStats")` => Chú ý câu lệnh này sẽ cho ta xem 1 số thông tin như thời gian truy vấn, số bản ghi cần truy vấn, và 1 số thông tin quan trọng khác trong mỗi lần truy vấn.
++ `db.zips.createIndex({"age": 1})` => Như vậy là ta đã đánh index cho cho field "age", và như vậy khi ta truy vấn đến field này đã nhanh hơn rất nhiều.(Với trường hợp nhiều bản ghi, chứ ít bản ghi nó sẽ không hiện rõ).
++ `db.zips.getIndexes()` => Với câu truy vấn này ta đã lấy ra các field được đánh key.(Hãy để ý đến những chỉ số được show ra)
++ `db.zips.dropIndex("age_1")` => Là lệnh để xóa index (Chú ý số age_1 đước lấy từ name khi mà get tất cả index về).
++ Chú ý nếu kết hợp với phân trang thì thời gian truy vấn còn nhỏ hơn nữa.
+###6.Compound index.
++ Chú ý nếu kết hợp 2 câu truy vấn cùng một lúc thì câu truy vấn của ta đã tối ưu hơn, mất ít thời gian truy vấn hơn.
++ `db.zips.createIndex({"age": 1, "username": 1})` => câu truy vấn có dạng như vậy nghĩa là nó đã có 2 field có cùng 1 index.
+###7.Unique index.
++ Unique index là khi ta đánh index cho field thì cũng sẽ đồng thời đánh unique để nó có thể là duy nhất, và dẫn đến khi ta update hoặc insert thì nó cũng sẽ báo lỗi.
++ `db.user.createIndex(
+   	{"user_id": 1},
+   	{unique: true}
+   )` => Đây là câu truy vấn để tạo index có unique là true. Và sau đó nếu có insert hay update đi nữa thì nó cũng không thể được, nó sé bắn lỗi ra.
+
+
+
 
 
    
