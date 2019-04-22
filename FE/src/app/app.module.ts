@@ -1,33 +1,41 @@
 import {BrowserModule} from '@angular/platform-browser';
 import {NgModule} from '@angular/core';
-import {AppRoutingModule} from './app-routing.module';
-import {StoreModule} from '@ngrx/store';
-import {EffectsModule} from '@ngrx/effects';
-import {ReactiveFormsModule} from '@angular/forms';
 
+import {AppRoutingModule} from './app-routing.module';
 import {AppComponent} from './app.component';
-import {HeaderComponent} from './layout/header/header.component';
-import {FooterComponent} from './layout/footer/footer.component';
-import {SidebarComponent} from './layout/sidebar/sidebar.component';
-import {SharedModule} from './shared/shared.module';
+import {SharedModule} from './shares/share.module';
+
+import {StoreModule} from './store/store.module';
+
+import {AccountModule} from './components/account/account.module';
+import {HomeModule} from './components/home/home.module';
+import {ProjectModule} from './components/project-management/project.module';
+import {SkillModule} from './components/skill-management/skill.module';
+import {UserModule} from './components/user-mamagement/user.module';
+
+import {HeaderComponent} from './layouts/header/header.component';
 import {CoreModule} from './core/core.module';
 
 @NgModule({
   declarations: [
     AppComponent,
-    HeaderComponent,
-    FooterComponent,
-    SidebarComponent
+    HeaderComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule,
-    SharedModule,
+
+    AccountModule,
+    ProjectModule,
+    UserModule,
+    SkillModule,
+    HomeModule,
+
+    StoreModule,
     CoreModule,
-    ReactiveFormsModule,
-    StoreModule.forRoot({}),
-    EffectsModule.forRoot([])
+    AppRoutingModule,
+    SharedModule
   ],
+  providers: [],
   bootstrap: [AppComponent]
 })
 export class AppModule {
